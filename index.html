@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +28,7 @@
                 <input class="form-input" type="text" name="query" placeholder="Article Search">
                 <button class="btn">Search</button>
             </form>
+            <button id="create-blog-btn" class="btn create-blog-btn">Create Blog</button>
 
         </div>
 
@@ -50,6 +52,20 @@
         </div>
     </div>
 
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="categories max-width-1 m-auto my-2">
+        <h2>Explore Categories</h2>
+        <div class="category-list">
+            <button class="category-btn" data-category="all">All</button>
+            <button class="category-btn" data-category="tech">Technology</button>
+            <button class="category-btn" data-category="lifestyle">Lifestyle</button>
+            <button class="category-btn" data-category="travel">Travel</button>
+            <button class="category-btn" data-category="food">Food</button>
+            <button class="category-btn" data-category="health">Health</button>
+        </div>
+    </div>
     <div class="max-width-1 m-auto">
         <hr>
     </div>
@@ -173,10 +189,39 @@
 
     </div>
 
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="create-blog max-width-1 m-auto my-2">
+        <h2>Create Your Own Blog</h2>
+        <p>Share your thoughts and stories with the world. Submit your advanced blog post below.</p>
+        <form class="blog-form" action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="blog-title">Blog Title</label>
+                <input type="text" id="blog-title" name="title" placeholder="Enter your blog title" required>
+            </div>
+            <div class="form-group">
+                <label for="blog-author">Author Name</label>
+                <input type="text" id="blog-author" name="author" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label for="blog-content">Blog Content</label>
+                <textarea id="blog-content" name="content" rows="10" placeholder="Write your blog content here..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="blog-image">Upload Image (Optional)</label>
+                <input type="file" id="blog-image" name="image" accept="image/*">
+            </div>
+            <button type="submit" class="btn submit-btn">Submit Blog</button>
+        </form>
+    </div>
+
     <div class="footer">
         <p>Copyright &copy; iBlog.com </p>
         <a href="https://www.vecteezy.com/free-vector/typewriter">Vector Credits: Vecteezy</a>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
