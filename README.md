@@ -41,7 +41,6 @@ A high-performance, aesthetically pleasing blog template built with the latest w
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/modern-blog.git
     cd modern-blog
     ```
 
