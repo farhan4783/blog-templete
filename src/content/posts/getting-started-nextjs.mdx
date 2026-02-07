@@ -1,0 +1,33 @@
+---
+title: "Getting Started with Next.js 14"
+date: "2023-10-12"
+author: "Jane Doe"
+excerpt: "Learn how to build modern web applications with the latest features of Next.js 14, including Server Actions and Partial Prerendering."
+image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop"
+category: "Development"
+readTime: "5 min read"
+---
+
+# Introduction to Next.js 14
+
+Next.js 14 is here, and it brings a suite of new features that make building web applications faster and easier than ever. In this post, we'll explore the key highlights and how you can get started.
+
+## Server Actions
+
+One of the most exciting features is the stability of Server Actions. They allow you to define functions that run on the server and can be called directly from your components.
+
+```tsx
+async function createPost(formData: FormData) {
+  'use server'
+  const title = formData.get('title')
+  // ... database logic
+}
+```
+
+## Partial Prerendering (Preview)
+
+Partial Prerendering is an experimental feature that allows you to combine the best of static and dynamic rendering. It's a game-changer for performance.
+
+### Conclusion
+
+Next.js 14 is a massive step forward. Start building today!
