@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 ModernBlog - Next.js Advanced Template
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-15.0%2B-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0%2B-blue?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-Featured-black?style=for-the-badge&logo=framer&logoColor=white)
 
-First, run the development server:
+A high-performance, aesthetically pleasing blog template built with the latest web technologies. Featuring a glassmorphism design system, dark mode, smooth animations, and MDX-powered content.
+
+---
+
+## ✨ Features
+
+- **🎨 Premium UI/UX**: Glassmorphism aesthetic with reusable `GlassCard` components.
+- **🌗 Dark/Light Mode**: Fully integrated theme switching with system preference detection.
+- **⚡ Performant**: Built on Next.js 15 (App Router) for optimal speed and SEO.
+- **📝 MDX Blog**: Write articles in Markdown/MDX with custom React components.
+- **🔍 Real-time Search**: Client-side filtering of blog posts by title, category, and content.
+- **🌊 Smooth Animations**: Page transitions and scroll animations powered by Framer Motion.
+- **📱 Responsive**: Flawless experience across mobile, tablet, and desktop.
+- **✉️ Contact Form**: Fully validated form using React Hook Form and Zod.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Forms**: [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/)
+- **Content**: [Gray Matter](https://github.com/jonschlinkert/gray-matter) + [next-mdx-remote](https://github.com/hashicorp/next-mdx-remote)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.17 or later
+- npm or pnpm
+
+### Installation
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/modern-blog.git
+    cd modern-blog
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Run development server**:
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+├── app/                 # Next.js App Router pages
+│   ├── blog/            # Blog index and dynamic post pages
+│   ├── contact/         # Contact page
+│   ├── create/          # Create post page (demo)
+│   ├── layout.tsx       # Root layout with Navbar/Footer
+│   └── page.tsx         # Home page with Hero/Features
+├── components/          # Reusable UI components
+│   ├── ui/              # Base UI elements (GlassCard, etc.)
+│   └── ...
+├── content/             # MDX Blog posts
+├── lib/                 # Utilities and data fetching
+└── styles/              # Global styles
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📝 Adding a New Blog Post
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  Create a new `.mdx` file in `src/content/posts`.
+2.  Add the required frontmatter:
+    ```yaml
+    ---
+    title: "Your Post Title"
+    date: "2024-03-20"
+    author: "Your Name"
+    excerpt: "A short summary of your post."
+    image: "https://example.com/image.jpg"
+    category: "Technology"
+    readTime: "5 min read"
+    ---
+    ```
+3.  Write your content below the frontmatter using standard Markdown/MDX.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contributing
 
-## Learn More
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
